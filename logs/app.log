@@ -1,0 +1,1128 @@
+2025-07-29 13:04:57 INFO  ProducerConfig:logAll:370 - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-07-29 13:04:57 INFO  KafkaProducer:configureTransactionState:580 - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-07-29 13:04:57 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:04:57 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:04:57 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753783497792
+2025-07-29 13:04:57 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:04:58 INFO  NetworkClient:handleDisconnections:977 - [Producer clientId=producer-1] Node -1 disconnected.
+2025-07-29 13:04:58 WARN  NetworkClient:processDisconnection:814 - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:04:58 WARN  NetworkClient:handleServerDisconnect:1105 - [Producer clientId=producer-1] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:04:58 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:04:58 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:04:58 INFO  Metrics:close:703 - Metrics reporters closed
+2025-07-29 13:04:58 INFO  AppInfoParser:unregisterAppInfo:83 - App info kafka.producer for producer-1 unregistered
+2025-07-29 13:04:58 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:04:58 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:05:38 INFO  ConsumerConfig:logAll:370 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weather-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weather-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-07-29 13:05:39 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:05:39 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:05:39 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753783539014
+2025-07-29 13:05:39 INFO  KafkaConsumer:subscribe:912 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Subscribed to topic(s): weather-topic
+2025-07-29 13:05:39 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:39 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:39 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:39 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:39 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:39 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:39 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:39 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:39 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:39 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:39 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:39 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:40 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:40 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:40 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:40 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:40 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:40 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:42 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:42 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:42 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:42 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:42 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:42 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:43 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:43 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:43 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:45 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:45 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:45 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:46 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:46 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:46 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:47 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:47 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:47 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:48 INFO  ProducerConfig:logAll:370 - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-07-29 13:05:48 INFO  KafkaProducer:configureTransactionState:580 - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-07-29 13:05:48 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:05:48 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:05:48 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753783548252
+2025-07-29 13:05:48 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:05:48 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:48 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:48 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:48 INFO  NetworkClient:handleDisconnections:977 - [Producer clientId=producer-1] Node -1 disconnected.
+2025-07-29 13:05:48 WARN  NetworkClient:processDisconnection:814 - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:48 WARN  NetworkClient:handleServerDisconnect:1105 - [Producer clientId=producer-1] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:48 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:05:48 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:05:48 INFO  Metrics:close:703 - Metrics reporters closed
+2025-07-29 13:05:48 INFO  AppInfoParser:unregisterAppInfo:83 - App info kafka.producer for producer-1 unregistered
+2025-07-29 13:05:48 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:05:48 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:05:48 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:05:48 INFO  Metrics:close:703 - Metrics reporters closed
+2025-07-29 13:05:49 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:49 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:49 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:50 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:50 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:50 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:51 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:51 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:51 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:52 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:52 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:52 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:53 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:53 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:53 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:54 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:54 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:54 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:05:55 INFO  NetworkClient:handleDisconnections:977 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Node -1 disconnected.
+2025-07-29 13:05:55 WARN  NetworkClient:processDisconnection:814 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2025-07-29 13:05:55 WARN  NetworkClient:handleServerDisconnect:1105 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Bootstrap broker localhost:29092 (id: -1 rack: null) disconnected
+2025-07-29 13:15:22 INFO  ConsumerConfig:logAll:370 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weather-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weather-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-07-29 13:15:22 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:15:22 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:15:22 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753784122649
+2025-07-29 13:15:22 INFO  KafkaConsumer:subscribe:912 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Subscribed to topic(s): weather-topic
+2025-07-29 13:15:23 WARN  NetworkClient:handleSuccessfulResponse:1145 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Error while fetching metadata with correlation id 2 : {weather-topic=LEADER_NOT_AVAILABLE}
+2025-07-29 13:15:23 INFO  Metadata:update:287 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Cluster ID: HZ9Crnt1R8KnXC91wHJKiw
+2025-07-29 13:15:23 WARN  NetworkClient:handleSuccessfulResponse:1145 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Error while fetching metadata with correlation id 4 : {weather-topic=LEADER_NOT_AVAILABLE}
+2025-07-29 13:15:23 WARN  NetworkClient:handleSuccessfulResponse:1145 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Error while fetching metadata with correlation id 6 : {weather-topic=LEADER_NOT_AVAILABLE}
+2025-07-29 13:15:24 INFO  ConsumerCoordinator:onSuccess:906 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Discovered group coordinator localhost:29092 (id: 2147482646 rack: null)
+2025-07-29 13:15:24 INFO  ConsumerCoordinator:sendJoinGroupRequest:576 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] (Re-)joining group
+2025-07-29 13:15:24 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-weather-consumer-group-1-a0a46388-6329-4e12-be8b-b32f4d837130
+2025-07-29 13:15:24 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-07-29 13:15:24 INFO  ConsumerCoordinator:sendJoinGroupRequest:576 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] (Re-)joining group
+2025-07-29 13:15:27 INFO  ProducerConfig:logAll:370 - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-07-29 13:15:27 INFO  KafkaProducer:configureTransactionState:580 - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-07-29 13:15:27 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:15:27 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:15:27 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753784127443
+2025-07-29 13:15:27 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:15:27 INFO  ConsumerCoordinator:handle:637 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-weather-consumer-group-1-a0a46388-6329-4e12-be8b-b32f4d837130', protocol='range'}
+2025-07-29 13:15:27 INFO  ConsumerCoordinator:onLeaderElected:717 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Finished assignment for group at generation 1: {consumer-weather-consumer-group-1-a0a46388-6329-4e12-be8b-b32f4d837130=Assignment(partitions=[weather-topic-0])}
+2025-07-29 13:15:27 INFO  Metadata:update:287 - [Producer clientId=producer-1] Cluster ID: HZ9Crnt1R8KnXC91wHJKiw
+2025-07-29 13:15:27 INFO  ConsumerCoordinator:handle:812 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-weather-consumer-group-1-a0a46388-6329-4e12-be8b-b32f4d837130', protocol='range'}
+2025-07-29 13:15:27 INFO  ConsumerCoordinator:invokeOnAssignment:312 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Notifying assignor about the new Assignment(partitions=[weather-topic-0])
+2025-07-29 13:15:27 INFO  ConsumerCoordinator:invokePartitionsAssigned:324 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Adding newly assigned partitions: weather-topic-0
+2025-07-29 13:15:27 INFO  TransactionManager:setProducerIdAndEpoch:505 - [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+2025-07-29 13:15:27 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:15:27 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:15:27 INFO  Metrics:close:703 - Metrics reporters closed
+2025-07-29 13:15:27 INFO  AppInfoParser:unregisterAppInfo:83 - App info kafka.producer for producer-1 unregistered
+2025-07-29 13:15:27 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:15:27 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:15:27 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:15:27 INFO  ConsumerCoordinator:handle:1578 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Found no committed offset for partition weather-topic-0
+2025-07-29 13:15:27 INFO  SubscriptionState:maybeSeekUnvalidated:398 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Resetting offset for partition weather-topic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 1001 rack: null)], epoch=0}}.
+2025-07-29 13:16:22 INFO  ConsumerCoordinator:invokePartitionsRevoked:343 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Revoke previously assigned partitions weather-topic-0
+2025-07-29 13:16:22 INFO  ConsumerCoordinator:maybeLeaveGroup:1133 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Member consumer-weather-consumer-group-1-a0a46388-6329-4e12-be8b-b32f4d837130 sending LeaveGroup request to coordinator localhost:29092 (id: 2147482646 rack: null) due to the consumer is being closed
+2025-07-29 13:16:22 INFO  ConsumerCoordinator:resetStateAndGeneration:1025 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-07-29 13:16:22 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-07-29 13:16:23 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:16:23 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:16:23 INFO  Metrics:close:703 - Metrics reporters closed
+2025-07-29 13:16:23 INFO  AppInfoParser:unregisterAppInfo:83 - App info kafka.consumer for consumer-weather-consumer-group-1 unregistered
+2025-07-29 13:17:30 INFO  ProducerConfig:logAll:370 - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-07-29 13:17:30 INFO  KafkaProducer:configureTransactionState:580 - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-07-29 13:17:30 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:17:30 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:17:30 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753784250313
+2025-07-29 13:17:30 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:17:30 INFO  Metadata:update:287 - [Producer clientId=producer-1] Cluster ID: HZ9Crnt1R8KnXC91wHJKiw
+2025-07-29 13:17:30 INFO  TransactionManager:setProducerIdAndEpoch:505 - [Producer clientId=producer-1] ProducerId set to 1 with epoch 0
+2025-07-29 13:17:30 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:17:30 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:17:30 INFO  Metrics:close:703 - Metrics reporters closed
+2025-07-29 13:17:30 INFO  AppInfoParser:unregisterAppInfo:83 - App info kafka.producer for producer-1 unregistered
+2025-07-29 13:17:30 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:17:30 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:17:30 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:21:48 INFO  ConsumerConfig:logAll:370 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weather-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weather-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-07-29 13:21:49 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:21:49 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:21:49 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753784509020
+2025-07-29 13:21:49 INFO  KafkaConsumer:subscribe:912 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Subscribed to topic(s): weather-topic
+2025-07-29 13:21:49 INFO  Metadata:update:287 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Cluster ID: HZ9Crnt1R8KnXC91wHJKiw
+2025-07-29 13:21:49 INFO  ConsumerCoordinator:onSuccess:906 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Discovered group coordinator localhost:29092 (id: 2147482646 rack: null)
+2025-07-29 13:21:49 INFO  ConsumerCoordinator:sendJoinGroupRequest:576 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] (Re-)joining group
+2025-07-29 13:21:49 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-weather-consumer-group-1-99f8d923-281a-4e35-9d5c-d68ee351d148
+2025-07-29 13:21:49 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-07-29 13:21:49 INFO  ConsumerCoordinator:sendJoinGroupRequest:576 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] (Re-)joining group
+2025-07-29 13:21:52 INFO  ConsumerCoordinator:handle:637 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Successfully joined group with generation Generation{generationId=3, memberId='consumer-weather-consumer-group-1-99f8d923-281a-4e35-9d5c-d68ee351d148', protocol='range'}
+2025-07-29 13:21:52 INFO  ConsumerCoordinator:onLeaderElected:717 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Finished assignment for group at generation 3: {consumer-weather-consumer-group-1-99f8d923-281a-4e35-9d5c-d68ee351d148=Assignment(partitions=[weather-topic-0])}
+2025-07-29 13:21:52 INFO  ConsumerCoordinator:handle:812 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Successfully synced group in generation Generation{generationId=3, memberId='consumer-weather-consumer-group-1-99f8d923-281a-4e35-9d5c-d68ee351d148', protocol='range'}
+2025-07-29 13:21:52 INFO  ConsumerCoordinator:invokeOnAssignment:312 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Notifying assignor about the new Assignment(partitions=[weather-topic-0])
+2025-07-29 13:21:52 INFO  ConsumerCoordinator:invokePartitionsAssigned:324 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Adding newly assigned partitions: weather-topic-0
+2025-07-29 13:21:52 INFO  ConsumerCoordinator:refreshCommittedOffsetsIfNeeded:980 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Setting offset for partition weather-topic-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 1001 rack: null)], epoch=0}}
+2025-07-29 13:21:54 INFO  ProducerConfig:logAll:370 - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-07-29 13:21:54 INFO  KafkaProducer:configureTransactionState:580 - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-07-29 13:21:54 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:21:54 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:21:54 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753784514215
+2025-07-29 13:21:54 INFO  Metadata:update:287 - [Producer clientId=producer-1] Cluster ID: HZ9Crnt1R8KnXC91wHJKiw
+2025-07-29 13:21:54 INFO  TransactionManager:setProducerIdAndEpoch:505 - [Producer clientId=producer-1] ProducerId set to 2 with epoch 0
+2025-07-29 13:22:49 INFO  ConsumerCoordinator:invokePartitionsRevoked:343 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Revoke previously assigned partitions weather-topic-0
+2025-07-29 13:22:49 INFO  ConsumerCoordinator:maybeLeaveGroup:1133 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Member consumer-weather-consumer-group-1-99f8d923-281a-4e35-9d5c-d68ee351d148 sending LeaveGroup request to coordinator localhost:29092 (id: 2147482646 rack: null) due to the consumer is being closed
+2025-07-29 13:22:49 INFO  ConsumerCoordinator:resetStateAndGeneration:1025 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-07-29 13:22:49 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-07-29 13:22:49 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:22:49 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:22:49 INFO  Metrics:close:703 - Metrics reporters closed
+2025-07-29 13:22:49 INFO  AppInfoParser:unregisterAppInfo:83 - App info kafka.consumer for consumer-weather-consumer-group-1 unregistered
+2025-07-29 13:23:53 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2025-07-29 13:26:49 INFO  ConsumerConfig:logAll:370 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weather-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weather-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-07-29 13:26:49 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:26:49 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:26:49 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753784809620
+2025-07-29 13:26:49 INFO  KafkaConsumer:subscribe:912 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Subscribed to topic(s): weather-topic
+2025-07-29 13:26:49 INFO  Metadata:update:287 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Cluster ID: HZ9Crnt1R8KnXC91wHJKiw
+2025-07-29 13:26:49 INFO  ConsumerCoordinator:onSuccess:906 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Discovered group coordinator localhost:29092 (id: 2147482646 rack: null)
+2025-07-29 13:26:49 INFO  ConsumerCoordinator:sendJoinGroupRequest:576 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] (Re-)joining group
+2025-07-29 13:26:50 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-weather-consumer-group-1-9429b129-bb33-4939-be01-199511a0a042
+2025-07-29 13:26:50 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-07-29 13:26:50 INFO  ConsumerCoordinator:sendJoinGroupRequest:576 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] (Re-)joining group
+2025-07-29 13:26:53 INFO  ConsumerCoordinator:handle:637 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-weather-consumer-group-1-9429b129-bb33-4939-be01-199511a0a042', protocol='range'}
+2025-07-29 13:26:53 INFO  ConsumerCoordinator:onLeaderElected:717 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Finished assignment for group at generation 7: {consumer-weather-consumer-group-1-9429b129-bb33-4939-be01-199511a0a042=Assignment(partitions=[weather-topic-0])}
+2025-07-29 13:26:53 INFO  ConsumerCoordinator:handle:812 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-weather-consumer-group-1-9429b129-bb33-4939-be01-199511a0a042', protocol='range'}
+2025-07-29 13:26:53 INFO  ConsumerCoordinator:invokeOnAssignment:312 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Notifying assignor about the new Assignment(partitions=[weather-topic-0])
+2025-07-29 13:26:53 INFO  ConsumerCoordinator:invokePartitionsAssigned:324 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Adding newly assigned partitions: weather-topic-0
+2025-07-29 13:26:53 INFO  ConsumerCoordinator:refreshCommittedOffsetsIfNeeded:980 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Setting offset for partition weather-topic-0 to the committed offset FetchPosition{offset=60, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 1001 rack: null)], epoch=0}}
+2025-07-29 13:26:55 INFO  ProducerConfig:logAll:370 - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-07-29 13:26:55 INFO  KafkaProducer:configureTransactionState:580 - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-07-29 13:26:56 INFO  AppInfoParser:<init>:119 - Kafka version: 3.6.1
+2025-07-29 13:26:56 INFO  AppInfoParser:<init>:120 - Kafka commitId: 5e3c2b738d253ff5
+2025-07-29 13:26:56 INFO  AppInfoParser:<init>:121 - Kafka startTimeMs: 1753784816116
+2025-07-29 13:26:56 INFO  Metadata:update:287 - [Producer clientId=producer-1] Cluster ID: HZ9Crnt1R8KnXC91wHJKiw
+2025-07-29 13:26:56 INFO  TransactionManager:setProducerIdAndEpoch:505 - [Producer clientId=producer-1] ProducerId set to 4 with epoch 0
+2025-07-29 13:27:49 INFO  ConsumerCoordinator:invokePartitionsRevoked:343 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Revoke previously assigned partitions weather-topic-0
+2025-07-29 13:27:49 INFO  ConsumerCoordinator:maybeLeaveGroup:1133 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Member consumer-weather-consumer-group-1-9429b129-bb33-4939-be01-199511a0a042 sending LeaveGroup request to coordinator localhost:29092 (id: 2147482646 rack: null) due to the consumer is being closed
+2025-07-29 13:27:49 INFO  ConsumerCoordinator:resetStateAndGeneration:1025 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-07-29 13:27:49 INFO  ConsumerCoordinator:requestRejoin:1072 - [Consumer clientId=consumer-weather-consumer-group-1, groupId=weather-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-07-29 13:27:49 INFO  Metrics:close:693 - Metrics scheduler closed
+2025-07-29 13:27:49 INFO  Metrics:close:697 - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-07-29 13:27:49 INFO  Metrics:close:703 - Metrics reporters closed
+2025-07-29 13:27:49 INFO  AppInfoParser:unregisterAppInfo:83 - App info kafka.consumer for consumer-weather-consumer-group-1 unregistered
+2025-07-29 13:28:02 INFO  KafkaProducer:close:1295 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
